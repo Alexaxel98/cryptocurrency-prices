@@ -1,0 +1,20 @@
+{
+  "name": "example",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Luis Diaz <preston-91@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
