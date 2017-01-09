@@ -1,9 +1,9 @@
 {
   "name": "example",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
+    "start":"node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,5 +14,15 @@
     "mongoose": "^4.6.3",
     "request": "^2.75.0",
     "socket.io": "^1.5.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexaxel98/cryptocurrency-prices.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alexaxel98/cryptocurrency-prices/issues"
+  },
+  "homepage": "https://github.com/Alexaxel98/cryptocurrency-prices#readme",
+  "description": ""
 }

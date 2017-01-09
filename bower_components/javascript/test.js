@@ -29,7 +29,7 @@
             for (var i = 0; i < crypt.type.length ; i++){
                 if(!isNaN(crypt.type[i].timestamp)){
                     if((crypt.type[i+1] == undefined) || (crypt.type[i].timestamp != crypt.type[i+1].timestamp)){
-                        cryptoCoin.push({'Timestamp': date = new Date(crypt.type[i].timestamp * 1000) , 'Price':crypt.type[i].ticker.price})
+                        cryptoCoin.push({'Timestamp': date = new Date(crypt.type[i].timestamp *1000)  , 'Price':crypt.type[i].ticker.price})
                 
             }
         }
@@ -78,7 +78,7 @@ console.log(cryptoCoin);
 var svg = dimple.newSvg(".container .jumbotron", 1000,1000); 
 
  chart = new dimple.chart(svg,cryptoCoin);
-    //chart.setBounds(60, 30, 510, 305)
+    chart.setBounds(60, 30, 510, 305)
 
 x=chart.addCategoryAxis("x","Timestamp"); 
 y = chart.addMeasureAxis("y","Price");
@@ -90,7 +90,7 @@ chart.draw();
 
 
 
-cleanAxis(x,5);
+cleanAxis(x,9);
 
 },500)
 
